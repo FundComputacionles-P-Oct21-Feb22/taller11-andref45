@@ -1,0 +1,16 @@
+1. Inicio 
+2. funcion principal()
+3.    obtenerValores()
+4. Fin funcion principal
+
+5. funcion obtenerValores()
+6.    valores(5), x(100)[{A-Z}, {a-z}, {BS}]
+7.    Para(i<--0, i<5, 1) haga
+8. 	Escribir "Ingrese un valor"
+9. 	Leer valores[i]
+10.   Fin_Para
+11.   Para(i<--0, i<5, 1) haga
+12. 	Escribir valores[i]
+13.   Fin_Para
+14. Fin funcion obtenerValores
+15. Fin 

@@ -1,0 +1,44 @@
+1. Inicio 
+2. funcion principal()
+3.   nombre, x(100)[{A-Z}, {a-z}, {BS}]
+4.   cedula, i[0-n]
+5.   Escribir "Ingrese su nombre"			
+6.   Leer nombre					//Ana Contreras
+7.   Escribir "Ingrese su número de cédula"	
+8.   Leer cedula					//1100112233
+9.   valor, i [0-n]
+10.   Escribir "Ingrese 1 para calcular el valor a pagar de la luz, ingrese 2 para calcular el valor del predio"
+11.   Leer valor
+12.   Si valor == 1 entonces
+13.   	calcularValorLuz(nombre, cedula);
+14.   De lo contrario 
+15.	Si valor == 2 entonces
+16.	   calcularPredio(nombre, cedula);
+17.	fin si 
+18.  fin si
+19.  Fin funcion principal
+
+20.  funcion calcularValorLuz(nombre, x(100); cedula, x(100))
+21.    valorkilow, d[0-n]
+22.    kmes, d[0-n]
+23.    valorT, d[0-n]
+24.    Escribir "Ingrese el valor del kilowatio"		
+25.    Leer valorkilow					//1
+26.    Escribir "Ingrese el número de kilowatios del mes"	
+25.    Leer valorkilow					//10
+26.    valorT <-- valorkilow * kmes //10
+27.    Escribir "Cliente " + nombre + " con cédula " + cedula + " debe cancelar el valor de $" + valorT
+28.	 	//Cliente Ana Contreras con cédula 1100112233 debe cancelar el valor de $10
+29.  fin funcion calcularValorLuz
+
+30.  funcion calcularPredio(nombre, x(100); cedula, x(100))
+31.    inmueble, d[0-n]
+32.    valorT, d[0-n]
+33.    Escribir "Ingrese el valor del inmueble"
+34.    Leer inmueble				//300000
+35.    valorT <-- (inmueble*2)/100		//6000
+36.    Escribir "Cliente " + nombre + " con cédula " + cedula + " tiene un bien inmueble valorado en $" + 
+37.    inmueble + " y tiene que pagar de predio $ " + valorT
+38.    //Cliente Ana Contreras con cédula 1100112233 tiene un bien inmueble valorado en $30000 y tiene que pagar de predio $ 6000.
+39.  fin funcion calcularPredio
+40. Fin
